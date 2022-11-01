@@ -14,8 +14,6 @@ public class ConfigurationsController : ControllerBase
 {
     private readonly IConfiguration configuration;
 
-    builder.Services.Configure<AplicacionConfiguracion>(
-        builder.Configuration.GetSeccion("Aplicacion"));
     
     public ConfigurationsController(IOptions<AplicacionConfiguracion> options ,IConfiguration configuration)
     {
